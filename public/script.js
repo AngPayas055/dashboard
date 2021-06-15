@@ -49,6 +49,11 @@ function settings() {
     document.getElementById("statistics-three").style.display = "none";
 }
 
+// let btn = document.querySelector("#nav-button");
+// let sidebar = document.querySelector("#side-menu");
+// let searchBtn = document.querySelector(".bx-search");
+
+
 
 
 //   function myFunction() {

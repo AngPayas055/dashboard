@@ -8,13 +8,30 @@ body{
     color: #999999;
 }
 
-#side-menu{
-    width: 230px;
-    /* background-color: bisque; */
-    overflow: auto;
-
-    /* padding: 32px; */
+#nav-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color:#8282C8
 }
+.theme-border{
+    border: 1px solid #8282C8;
+}
+
+.theme-color{
+    background-color: #8282C8;
+    
+}
+
+.margin-right{
+    margin-right: 90px;
+}
+
+
+
+
+
+
 
 
 nav{
@@ -240,7 +257,26 @@ form input{
     background-color: #8282C8;
     }
 
-@media only screen and (max-width: 480px) {
+
+
+  #side-menu{
+    width: 230px;
+    /* background-color: bisque; */
+    overflow: auto;
+
+    /* padding: 32px; */
+}
+
+.nav__on-mobile{
+    display: none;
+    position: fixed;
+}
+#search-tab{
+    /* margin-top: 100px; */
+    width: 100%;
+}
+
+@media only screen and (max-width: 575px) {
     
     #side-menu{
     display:none;
@@ -249,9 +285,31 @@ form input{
         /* margin-left: auto; */
         width: 100vw;
     }
-    /* #dashboard{
-        width: calc(100vw - 240px);
-        margin-left: auto;
-       
-    } */
+    .nav__on-mobile{
+        display: block;
+    }
+    #search-tab{
+        margin-top: 100px;
+        /* width: 100%; */
+    }
+
   }
+
+@media only screen and (max-width: 1199px ){
+    
+    #side-menu{
+        display:none;
+        }
+        #dashboard{
+            /* margin-left: auto; */
+            width: 100vw;
+        }
+        .nav__on-mobile{
+            display: block;
+        }
+        #search-tab{
+            margin-top: 100px;
+            /* width: 100%; */
+        }
+
+}
